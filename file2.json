@@ -1,0 +1,14 @@
+{
+	"Equation": [{
+		"Level_1": {
+			"Digits": [7, 3],
+			"Opraters": ["+"],
+			"Answer": 10
+		},
+		"Level_2": {
+			"Digits": [1, -3],
+			"Opraters": ["+"],
+			"Answer": -2
+		}
+	}]
+}
