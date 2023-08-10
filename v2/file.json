@@ -1,0 +1,19 @@
+{
+"data": [
+			{
+				"Digits": [7,2,3],
+				"Opraters":["+"],
+				"Answer": 9
+			},
+			{
+				"Digits": [1,2],
+				"Opraters":["+"],
+				"Answer": 3
+			},
+			{
+				"Digits": [1,2],
+				"Opraters":["+"],
+				"Answer": 3
+			}
+    	]	
+}
