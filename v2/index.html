@@ -35,6 +35,13 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			document.getElementsByTagName("canvas").style.transform
+                       = 'rotate(90deg)';
+		});
+       
+    </script>
 
 </body>
 </html>
