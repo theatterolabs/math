@@ -14,21 +14,10 @@
 	<link rel="icon" type="image/png" href="icons/icon-512.png">
 
 <link rel="stylesheet" href="style.css">
-	<style>
-		/* #myDiv { transform: rotateZ(-90deg); } */
-	@media only screen and (orientation:portrait) {
 	
-      #myDiv {
-        /* Rotate the content container */
-        height: 100vw;
-    transform: rotate(-90deg);
-      }
-	}
-   
-	</style>
 
 </head>
-<body id="myDiv">
+<body onload="lock('landscape-primary')">
 
 <script>
 if (location.protocol.substr(0, 4) === "file")
@@ -47,6 +36,19 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
+	<script>
+		function lock (orientation) {
+  // (A1) GO INTO FULL SCREEN FIRST
+  let de = document.documentElement;
+  if (de.requestFullscreen) { de.requestFullscreen(); }
+  else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
+  else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
+  else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
+
+  // (A2) THEN LOCK ORIENTATION
+  screen.orientation.lock(orientation);
+}
+	</script>
 	
 
 </body>
